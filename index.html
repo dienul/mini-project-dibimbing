@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/Steam-logo-black.png" style="height: 60; width: 60;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
+                        <li class="nav-item my-auto">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" aria-current="page" href="./about-us.html">About Us</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#">Games</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" href="#">Discover</a>
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="btn btn-sign-in d-flex justify-content-center ms-lg-2 rounded-pill"
+                                href="./src/sign-in.html" role="button">Sign
+                                In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- <section id="alert" class="alert-top container">
+        <div id="alret-remove" class="alert bg-purple" role="alert">
+            A simple success alert—check it out!
+        </div>
+    </section> -->
+
+    <section id="alert-test" class="alert-top container">
+        <div class="alert bg-purple alert-dismissible fade show" role="alert">
+            New Arrival on October 2021, <strong>check it out!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div id="pageMessages">
+
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Let's create some Alerts</h1>
+            </div>
+        </div>
+        <div class="container">
+            <button class="btn btn-danger"
+                onclick="createAlert('Opps!','Something went wrong','Here is a bunch of text about some stuff that happened.','danger',true,false,'pageMessages');">Add
+                Danger Alert</button>
+            <button class="btn btn-success"
+                onclick="createAlert('','Nice Work!','Here is a bunch of text about some stuff that happened.','success',true,true,'pageMessages');">Add
+                Success Alert</button>
+            <button class="btn btn-info"
+                onclick="createAlert('BTDubs','','Here is a bunch of text about some stuff that happened.','info',false,true,'pageMessages');">Add
+                Info Alert</button>
+            <button class="btn btn-warning"
+                onclick="createAlert('','','Here is a bunch of text about some stuff that happened.','warning',false,true,'pageMessages');">Add
+                Warning Alert</button>
+        </div>
+    </section> -->
+
+    <!-- Header -->
+    <section class="header pt-lg-60 pb-50">
+        <div class="container-xxl container-fluid">
+            <div class="row gap-lg-0 gap-5">
+                <div class="col-lg-6 col-12 my-auto">
+                    <p class="text-support text-lg color-palette-2">
+                        Halo gamers,
+                    </p>
+                    <h1 class="header-title color-palette-1 fw-bold">
+                        Buy Now & Get <span class="d-sm-inline d-none">a</span><span class="d-sm-none d-inline">a
+                        </span><span class="underline-blue"> New</span> <br class="d-sm-block d-none"> <span
+                            class="underline-blue">Experience</span> in Gaming
+                    </h1>
+                    <p class="mt-30 mb-40 text-lg color-palette-1">Kami menyediakan jutaan cara untuk membantu<br
+                            class="d-md-block d-none"> players menjadi pemenang sejati
+                    </p>
+                    <div class="d-flex flex-lg-row flex-column gap-4">
+                        <a class="btn btn-get text-lg text-white rounded-pill" href="#feature" role="button">Get
+                            Started</a>
+                        <a class="btn-learn text-lg color-palette-1 my-auto text-center" href="#" role="button">Learn
+                            More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 d-lg-block d-none">
+                    <div class="d-flex justify-content-lg-end justify-content-center me-lg-5">
+                        <div class="position-relative" data-aos="zoom-in">
+                            <img src="./assets/img/Steam.png" class="img-fluid rounded" alt="">
+                            <div class="card left-card position-absolute border-0">
+                                <div class="d-flex align-items-center mb-16 gap-3">
+                                    <img src="./assets/img/profile-dienul.png" width="40" height="40"
+                                        class="rounded-pill" alt="">
+                                    <div>
+                                        <p class="text-sm fw-medium color-palette-1 m-0">Dienul Haq</p>
+                                        <p class="text-xs fw-light color-palette-2 m-0">Professional Gamer</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                            fill="#FEBD57" />
+                                    </svg>
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                            fill="#FEBD57" />
+                                    </svg>
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                            fill="#FEBD57" />
+                                    </svg>
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                            fill="#FEBD57" />
+                                    </svg>
+                                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                            fill="#FEBD57" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="card right-card position-absolute border-0">
+                                <div class="position-relative d-flex flex-row justify-content-center mb-24">
+                                    <img src="./assets/img/Razor-dota2.png" class="rounded-pill" alt="">
+                                    <p class="right-card-support text-white text-xxs text-center position-absolute m-0">
+                                        New</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-center m-0 fw-medium color-palette-1">Razor</p>
+                                    <p class="fw-light text-center m-0 color-palette-2 text-xs">Dota 2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Column - Feature -->
+    <section id="feature" class="feature pt-50 pb-50">
+        <div class="container-fluid">
+            <h2 class="text-4xl fw-bold color-palette-1 text-center mb-30">It’s Really That<br> Easy to Win the Game
+            </h2>
+            <div class="row gap-lg-0 gap-4" data-aos="fade-up">
+                <div class="col-lg-4">
+                    <div class="card feature-card border-0">
+
+                        <img src="./assets/img/future_csgo.jpg" class="img-fluid rounded mb-2 " alt="">
+                        <p class="fw-semibold text-2xl mb-2 color-palette-1">CS GO</p>
+                        <p class="text-lg color-palette-1 mb-2">Rp 200.000</p>
+                        <div class="d-flex gap-2">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <P>500 Reviewers</P>
+                        </div>
+                        <a class="btn btn-get text-lg text-white rounded-pill" role="button" data-bs-toggle="modal"
+                            data-bs-target="#csgo-modal">Preview</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card feature-card border-0">
+
+                        <img src="./assets/img/future_valorant.jpg" class="img-fluid rounded mb-2" alt="">
+                        <p class="fw-semibold text-2xl mb-2 color-palette-1">VALORANT</p>
+                        <p class="text-lg color-palette-1 mb-2">Rp 200.000</p>
+                        <div class="d-flex gap-2">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <P>500 Reviewers</P>
+                        </div>
+                        <a class="btn btn-get text-lg text-white rounded-pill" role="button" data-bs-toggle="modal"
+                            data-bs-target="#valorant-modal">Preview</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card feature-card border-0">
+                        <img src="./assets/img/future_dota2.jpg" class="img-fluid rounded mb-2" alt="">
+                        <p class="fw-semibold text-2xl mb-2 color-palette-1">DOTA 2</p>
+                        <p class="text-lg color-palette-1 mb-2">Rp 200.000</p>
+                        <div class="d-flex gap-2">
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.0489 0.927049C11.3483 0.0057386 12.6517 0.00574004 12.9511 0.927051L14.9187 6.98278C15.0526 7.3948 15.4365 7.67376 15.8697 7.67376H22.2371C23.2058 7.67376 23.6086 8.91338 22.8249 9.48278L17.6736 13.2254C17.3231 13.4801 17.1764 13.9314 17.3103 14.3435L19.2779 20.3992C19.5773 21.3205 18.5228 22.0866 17.7391 21.5172L12.5878 17.7746C12.2373 17.5199 11.7627 17.5199 11.4122 17.7746L6.2609 21.5172C5.47719 22.0866 4.42271 21.3205 4.72206 20.3992L6.68969 14.3435C6.82356 13.9314 6.6769 13.4801 6.32642 13.2254L1.17511 9.48278C0.391392 8.91338 0.794168 7.67376 1.76289 7.67376H8.13026C8.56349 7.67376 8.94744 7.3948 9.08132 6.98278L11.0489 0.927049Z"
+                                    fill="#FEBD57" />
+                            </svg>
+                            <P>500 Reviewers</P>
+                        </div>
+                        <a class="btn btn-get text-lg text-white rounded-pill" role="button" data-bs-toggle="modal"
+                            data-bs-target="#dota2-modal">Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Column - Featured-game -->
+    <section class="featured-game pt-50 pb-50">
+        <div class="container-fluid">
+            <h2 class="text-4xl fw-bold color-palette-1 mb-30">Our Featured<br> Games This Year
+            </h2>
+            <div class="d-flex flex-row flex-lg-wrap overflow-setting justify-content-lg-between gap-lg-3 gap-4"
+                data-aos="fade-up">
+                <div class="featured-game-card position-relative">
+                    <a href="./src/detail.html">
+                        <div class="blur-sharp">
+                            <img src="./assets/img/Thumbnail-1.png" width="205" height="270" alt="">
+                        </div>
+                        <div class="cover position-absolute bottom-0 m-32">
+                            <div class="d-flex flex-column h-100 justify-content-between text-decoration-none">
+                                <div class="game-icon mx-auto">
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M48.8309 6.33404C41.7479 -5.30296 31.0779 2.79304 31.0779 2.79304C30.3859 3.31604 29.1099 3.74604 28.2429 3.74804L25.3849 3.75004C24.5179 3.75104 23.2419 3.32104 22.5509 2.79804C22.5509 2.79804 11.8799 -5.29996 4.79595 6.33704C-2.28605 17.97 0.567947 30.639 0.567947 30.639C1.06795 33.741 2.71595 35.811 5.82595 35.551C8.92695 35.292 15.6579 27.197 15.6579 27.197C16.2139 26.53 17.3789 25.985 18.2439 25.985L35.3779 25.982C36.2439 25.982 37.4079 26.527 37.9629 27.194C37.9629 27.194 44.6949 35.289 47.8009 35.548C50.9069 35.808 52.5589 33.736 53.0559 30.636C53.0549 30.636 55.9139 17.969 48.8309 6.33404ZM20.3739 15.806H16.6999V19.347C16.6999 19.347 15.9219 19.941 14.7179 19.926C13.5159 19.908 12.9719 19.278 12.9719 19.278V15.807H9.50195C9.50195 15.807 9.06895 15.363 8.95295 14.194C8.83895 13.025 9.43195 12.08 9.43195 12.08H13.1069V8.40604C13.1069 8.40604 13.8629 8.00104 14.9499 8.03204C16.0379 8.06604 16.8349 8.47504 16.8349 8.47504L16.8199 12.079H20.2899C20.2899 12.079 20.8959 12.857 20.9459 13.797C20.9959 14.738 20.3739 15.806 20.3739 15.806ZM37.2259 19.842C35.6169 19.842 34.3199 18.541 34.3199 16.934C34.3199 15.324 35.6169 14.026 37.2259 14.026C38.8279 14.026 40.1349 15.324 40.1349 16.934C40.1349 18.542 38.8279 19.842 37.2259 19.842ZM37.2259 11.841C35.6169 11.841 34.3199 10.541 34.3199 8.93404C34.3199 7.32404 35.6169 6.02604 37.2259 6.02604C38.8279 6.02604 40.1349 7.32404 40.1349 8.93404C40.1349 10.542 38.8279 11.841 37.2259 11.841ZM44.4679 16.136C42.8589 16.136 41.5619 14.836 41.5619 13.228C41.5619 11.619 42.8589 10.32 44.4679 10.32C46.0699 10.32 47.3769 11.619 47.3769 13.228C47.3769 14.836 46.0699 16.136 44.4679 16.136Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="fw-semibold text-white text-xl m-0">Super Mechs</p>
+                                    <p class="fw-light text-white m-0">Mobile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="featured-game-card position-relative">
+                    <a href="./src/detail.html">
+                        <div class="blur-sharp">
+                            <img src="./assets/img/Thumbnail-2.png" width="205" height="270" alt="">
+                        </div>
+                        <div class="cover position-absolute bottom-0 m-32">
+                            <div class="d-flex flex-column h-100 justify-content-between text-decoration-none">
+                                <div class="game-icon mx-auto">
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M48.8309 6.33404C41.7479 -5.30296 31.0779 2.79304 31.0779 2.79304C30.3859 3.31604 29.1099 3.74604 28.2429 3.74804L25.3849 3.75004C24.5179 3.75104 23.2419 3.32104 22.5509 2.79804C22.5509 2.79804 11.8799 -5.29996 4.79595 6.33704C-2.28605 17.97 0.567947 30.639 0.567947 30.639C1.06795 33.741 2.71595 35.811 5.82595 35.551C8.92695 35.292 15.6579 27.197 15.6579 27.197C16.2139 26.53 17.3789 25.985 18.2439 25.985L35.3779 25.982C36.2439 25.982 37.4079 26.527 37.9629 27.194C37.9629 27.194 44.6949 35.289 47.8009 35.548C50.9069 35.808 52.5589 33.736 53.0559 30.636C53.0549 30.636 55.9139 17.969 48.8309 6.33404ZM20.3739 15.806H16.6999V19.347C16.6999 19.347 15.9219 19.941 14.7179 19.926C13.5159 19.908 12.9719 19.278 12.9719 19.278V15.807H9.50195C9.50195 15.807 9.06895 15.363 8.95295 14.194C8.83895 13.025 9.43195 12.08 9.43195 12.08H13.1069V8.40604C13.1069 8.40604 13.8629 8.00104 14.9499 8.03204C16.0379 8.06604 16.8349 8.47504 16.8349 8.47504L16.8199 12.079H20.2899C20.2899 12.079 20.8959 12.857 20.9459 13.797C20.9959 14.738 20.3739 15.806 20.3739 15.806ZM37.2259 19.842C35.6169 19.842 34.3199 18.541 34.3199 16.934C34.3199 15.324 35.6169 14.026 37.2259 14.026C38.8279 14.026 40.1349 15.324 40.1349 16.934C40.1349 18.542 38.8279 19.842 37.2259 19.842ZM37.2259 11.841C35.6169 11.841 34.3199 10.541 34.3199 8.93404C34.3199 7.32404 35.6169 6.02604 37.2259 6.02604C38.8279 6.02604 40.1349 7.32404 40.1349 8.93404C40.1349 10.542 38.8279 11.841 37.2259 11.841ZM44.4679 16.136C42.8589 16.136 41.5619 14.836 41.5619 13.228C41.5619 11.619 42.8589 10.32 44.4679 10.32C46.0699 10.32 47.3769 11.619 47.3769 13.228C47.3769 14.836 46.0699 16.136 44.4679 16.136Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="fw-semibold text-white text-xl m-0">Call of Duty: Modern</p>
+                                    <p class="fw-light text-white m-0">Mobile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="featured-game-card position-relative">
+                    <a href="./src/detail.html">
+                        <div class="blur-sharp">
+                            <img src="./assets/img/Thumbnail-3.png" width="205" height="270" alt="">
+                        </div>
+                        <div class="cover position-absolute bottom-0 m-32">
+                            <div class="d-flex flex-column h-100 justify-content-between text-decoration-none">
+                                <div class="game-icon mx-auto">
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M48.8309 6.33404C41.7479 -5.30296 31.0779 2.79304 31.0779 2.79304C30.3859 3.31604 29.1099 3.74604 28.2429 3.74804L25.3849 3.75004C24.5179 3.75104 23.2419 3.32104 22.5509 2.79804C22.5509 2.79804 11.8799 -5.29996 4.79595 6.33704C-2.28605 17.97 0.567947 30.639 0.567947 30.639C1.06795 33.741 2.71595 35.811 5.82595 35.551C8.92695 35.292 15.6579 27.197 15.6579 27.197C16.2139 26.53 17.3789 25.985 18.2439 25.985L35.3779 25.982C36.2439 25.982 37.4079 26.527 37.9629 27.194C37.9629 27.194 44.6949 35.289 47.8009 35.548C50.9069 35.808 52.5589 33.736 53.0559 30.636C53.0549 30.636 55.9139 17.969 48.8309 6.33404ZM20.3739 15.806H16.6999V19.347C16.6999 19.347 15.9219 19.941 14.7179 19.926C13.5159 19.908 12.9719 19.278 12.9719 19.278V15.807H9.50195C9.50195 15.807 9.06895 15.363 8.95295 14.194C8.83895 13.025 9.43195 12.08 9.43195 12.08H13.1069V8.40604C13.1069 8.40604 13.8629 8.00104 14.9499 8.03204C16.0379 8.06604 16.8349 8.47504 16.8349 8.47504L16.8199 12.079H20.2899C20.2899 12.079 20.8959 12.857 20.9459 13.797C20.9959 14.738 20.3739 15.806 20.3739 15.806ZM37.2259 19.842C35.6169 19.842 34.3199 18.541 34.3199 16.934C34.3199 15.324 35.6169 14.026 37.2259 14.026C38.8279 14.026 40.1349 15.324 40.1349 16.934C40.1349 18.542 38.8279 19.842 37.2259 19.842ZM37.2259 11.841C35.6169 11.841 34.3199 10.541 34.3199 8.93404C34.3199 7.32404 35.6169 6.02604 37.2259 6.02604C38.8279 6.02604 40.1349 7.32404 40.1349 8.93404C40.1349 10.542 38.8279 11.841 37.2259 11.841ZM44.4679 16.136C42.8589 16.136 41.5619 14.836 41.5619 13.228C41.5619 11.619 42.8589 10.32 44.4679 10.32C46.0699 10.32 47.3769 11.619 47.3769 13.228C47.3769 14.836 46.0699 16.136 44.4679 16.136Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="fw-semibold text-white text-xl m-0">Dota 2</p>
+                                    <p class="fw-light text-white m-0">Desktop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="featured-game-card position-relative">
+                    <a href="./src/detail.html">
+                        <div class="blur-sharp">
+                            <img src="./assets/img/Thumbnail-4.png" width="205" height="270" alt="">
+                        </div>
+                        <div class="cover position-absolute bottom-0 m-32">
+                            <div class="d-flex flex-column h-100 justify-content-between text-decoration-none">
+                                <div class="game-icon mx-auto">
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M48.8309 6.33404C41.7479 -5.30296 31.0779 2.79304 31.0779 2.79304C30.3859 3.31604 29.1099 3.74604 28.2429 3.74804L25.3849 3.75004C24.5179 3.75104 23.2419 3.32104 22.5509 2.79804C22.5509 2.79804 11.8799 -5.29996 4.79595 6.33704C-2.28605 17.97 0.567947 30.639 0.567947 30.639C1.06795 33.741 2.71595 35.811 5.82595 35.551C8.92695 35.292 15.6579 27.197 15.6579 27.197C16.2139 26.53 17.3789 25.985 18.2439 25.985L35.3779 25.982C36.2439 25.982 37.4079 26.527 37.9629 27.194C37.9629 27.194 44.6949 35.289 47.8009 35.548C50.9069 35.808 52.5589 33.736 53.0559 30.636C53.0549 30.636 55.9139 17.969 48.8309 6.33404ZM20.3739 15.806H16.6999V19.347C16.6999 19.347 15.9219 19.941 14.7179 19.926C13.5159 19.908 12.9719 19.278 12.9719 19.278V15.807H9.50195C9.50195 15.807 9.06895 15.363 8.95295 14.194C8.83895 13.025 9.43195 12.08 9.43195 12.08H13.1069V8.40604C13.1069 8.40604 13.8629 8.00104 14.9499 8.03204C16.0379 8.06604 16.8349 8.47504 16.8349 8.47504L16.8199 12.079H20.2899C20.2899 12.079 20.8959 12.857 20.9459 13.797C20.9959 14.738 20.3739 15.806 20.3739 15.806ZM37.2259 19.842C35.6169 19.842 34.3199 18.541 34.3199 16.934C34.3199 15.324 35.6169 14.026 37.2259 14.026C38.8279 14.026 40.1349 15.324 40.1349 16.934C40.1349 18.542 38.8279 19.842 37.2259 19.842ZM37.2259 11.841C35.6169 11.841 34.3199 10.541 34.3199 8.93404C34.3199 7.32404 35.6169 6.02604 37.2259 6.02604C38.8279 6.02604 40.1349 7.32404 40.1349 8.93404C40.1349 10.542 38.8279 11.841 37.2259 11.841ZM44.4679 16.136C42.8589 16.136 41.5619 14.836 41.5619 13.228C41.5619 11.619 42.8589 10.32 44.4679 10.32C46.0699 10.32 47.3769 11.619 47.3769 13.228C47.3769 14.836 46.0699 16.136 44.4679 16.136Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="fw-semibold text-white text-xl m-0">Clash of Clans</p>
+                                    <p class="fw-light text-white m-0">Mobile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="featured-game-card position-relative">
+                    <a href="./src/detail.html">
+                        <div class="blur-sharp">
+                            <img src="./assets/img/Thumbnail-5.png" width="205" height="270" alt="">
+                        </div>
+                        <div class="cover position-absolute bottom-0 m-32">
+                            <div class="d-flex flex-column h-100 justify-content-between text-decoration-none">
+                                <div class="game-icon mx-auto">
+                                    <svg width="54" height="36" viewBox="0 0 54 36" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M48.8309 6.33404C41.7479 -5.30296 31.0779 2.79304 31.0779 2.79304C30.3859 3.31604 29.1099 3.74604 28.2429 3.74804L25.3849 3.75004C24.5179 3.75104 23.2419 3.32104 22.5509 2.79804C22.5509 2.79804 11.8799 -5.29996 4.79595 6.33704C-2.28605 17.97 0.567947 30.639 0.567947 30.639C1.06795 33.741 2.71595 35.811 5.82595 35.551C8.92695 35.292 15.6579 27.197 15.6579 27.197C16.2139 26.53 17.3789 25.985 18.2439 25.985L35.3779 25.982C36.2439 25.982 37.4079 26.527 37.9629 27.194C37.9629 27.194 44.6949 35.289 47.8009 35.548C50.9069 35.808 52.5589 33.736 53.0559 30.636C53.0549 30.636 55.9139 17.969 48.8309 6.33404ZM20.3739 15.806H16.6999V19.347C16.6999 19.347 15.9219 19.941 14.7179 19.926C13.5159 19.908 12.9719 19.278 12.9719 19.278V15.807H9.50195C9.50195 15.807 9.06895 15.363 8.95295 14.194C8.83895 13.025 9.43195 12.08 9.43195 12.08H13.1069V8.40604C13.1069 8.40604 13.8629 8.00104 14.9499 8.03204C16.0379 8.06604 16.8349 8.47504 16.8349 8.47504L16.8199 12.079H20.2899C20.2899 12.079 20.8959 12.857 20.9459 13.797C20.9959 14.738 20.3739 15.806 20.3739 15.806ZM37.2259 19.842C35.6169 19.842 34.3199 18.541 34.3199 16.934C34.3199 15.324 35.6169 14.026 37.2259 14.026C38.8279 14.026 40.1349 15.324 40.1349 16.934C40.1349 18.542 38.8279 19.842 37.2259 19.842ZM37.2259 11.841C35.6169 11.841 34.3199 10.541 34.3199 8.93404C34.3199 7.32404 35.6169 6.02604 37.2259 6.02604C38.8279 6.02604 40.1349 7.32404 40.1349 8.93404C40.1349 10.542 38.8279 11.841 37.2259 11.841ZM44.4679 16.136C42.8589 16.136 41.5619 14.836 41.5619 13.228C41.5619 11.619 42.8589 10.32 44.4679 10.32C46.0699 10.32 47.3769 11.619 47.3769 13.228C47.3769 14.836 46.0699 16.136 44.4679 16.136Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="fw-semibold text-white text-xl m-0">Mobile Legends</p>
+                                    <p class="fw-light text-white m-0">Mobile</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <!-- <h2>Contact</h2> -->
+                <h3><span>Contact Us</span></h3>
+                <p>give your feedback, you are our priority.</p>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-6">
+                    <div class="info-box mb-4">
+                        <i class='bx bx-map'></i>
+                        <h3>Our Address</h3>
+                        <p>Universitas Gunadarma, Kec Cimanggis, Kota Depok, Jawa barat 1651</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="info-box  mb-4">
+                        <i class="bx bx-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>hq.dienul@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="info-box  mb-4">
+                        <i class="bx bx-phone-call"></i>
+                        <h3>Call Us</h3>
+                        <p>+6281 111 333 47</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-6 ">
+                    <!-- <iframe class="mb-4 mb-lg-0"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                        frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe> -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15861.12013701863!2d106.83435713577131!3d-6.357787650602395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec475427cefd%3A0xc4e7eee0f871687!2sUniversitas%20Gunadarma%20Kampus%20E!5e0!3m2!1sid!2sid!4v1635278940758!5m2!1sid!2sid"
+                        frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="forms/contact.php" method="post" role="form" class="feedback-form">
+                        <div class="row">
+                            <div class="col form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    required>
+                            </div>
+                            <div class="col form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="button"
+                                class="btn btn-get text-lg text-white rounded-pill">Send Message</button></div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+    <!-- Dota2 Modal -->
+    <div class="modal fade" id="dota2-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Dota 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/img/future_dota2.jpg" class="img-fluid rounded mb-2" alt="">
+                    <P>Dota 2 is a multiplayer online battle arena (MOBA) video game in which two teams of five players
+                        compete to collectively destroy a large structure defended by the opposing team known as the
+                        "Ancient", whilst defending their own.</P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-get text-lg text-white rounded-pill">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Valorant Modal  -->
+    <div class="modal fade" id="valorant-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Valorant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/img/future_valorant.jpg" class="img-fluid rounded mb-2" alt="">
+                    <P>Valorant is <strong> a tactical shooting game involving two teams with 5 players in each team </strong>. Every
+                        player can sign in and play remotely from anywhere in the world. Every game has 25 rounds and
+                        the team that wins 13 of them first wins the game. Players can choose their in-game characters
+                        called agents at the start of the game..</P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-get text-lg text-white rounded-pill">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- csgo Modal -->
+    <div class="modal fade" id="csgo-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">CS GO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./assets/img/future_csgo.jpg" class="img-fluid rounded img-rounded mb-2" alt="">
+                    <p>Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it
+                        pioneered when it was launched 19 years ago.</p>
+                    <p>CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of
+                        the classic CS content (de_dust2, etc.).</p>
+                    <P>"Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most
+                        played online PC action game in the world almost immediately after its release in August 1999,"
+                        said Doug Lombardi at Valve. "For the past 12 years, it has continued to be one of the
+                        most-played games in the world, headline competitive gaming tournaments and selling over 25
+                        million units worldwide across the franchise. CS: GO promises to expand on CS' award-winning
+                        gameplay and deliver it to gamers on the PC as well as the next gen consoles and the Mac."</P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-get text-lg text-white rounded-pill">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AOS Animation -->
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

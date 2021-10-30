@@ -1,0 +1,19 @@
+.about-us {
+  min-height: 700px;
+  display: block;
+}
+
+.about-us .title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about-us .title h3 {
+  /* margin: 15px 0 0 0; */
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-us .title p{
+    text-align: left;
+}
